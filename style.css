@@ -479,6 +479,50 @@ ul {
     background: var(--text-dark); /* Default dark color */
 }
 
+/* --- PRODUCTS LIST (How I Work) --- */
+.products-list-container {
+    margin-top: 60px;
+    text-align: center;
+    background: #f9fafb; /* Very light gray box */
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.products-list-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+.products-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.products-tags li {
+    background: white;
+    border: 1px solid var(--primary-accent); /* Your purple accent color */
+    color: var(--text-dark);
+    padding: 10px 24px;
+    border-radius: 50px; /* Pill shape */
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.products-tags li:hover {
+    background: var(--insta-gradient); /* Hover effect matches your brand */
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
 /* --- MOBILE RESPONSIVENESS (FOOLPROOF VERSION) --- */
 @media (max-width: 768px) {
     /* 1. HAMBURGER ICON */
@@ -556,3 +600,4 @@ ul {
         padding: 0;
     }
 }
+
